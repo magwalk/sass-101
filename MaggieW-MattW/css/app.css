@@ -1,0 +1,237 @@
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+footer, header, main, nav {
+  display: block; }
+
+/* ==========================================================================
+Base
+========================================================================== */
+html {
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Remove default margin.*/
+body {
+  margin: 0; }
+
+/* ==========================================================================
+Typography
+========================================================================== */
+/*=Fonts=*/
+/*Aller*/
+@font-face {
+  font-family: 'Aller';
+  src: url("fonts/Aller/Aller_Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Aller';
+  src: url("fonts/Aller/Aller_Bd.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+/*artifika*/
+@font-face {
+  font-family: 'artifika';
+  src: url("fonts/artifika/Artifika-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+h1 {
+  font-family: 'artifika', serif;
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+html {
+  font-family: 'Aller', sans-serif; }
+
+/* ==========================================================================
+Colors
+========================================================================== */
+a:link {
+  color: #999900; }
+
+h1 {
+  color: #B80000; }
+
+p {
+  color: #66CC00; }
+
+/* ==========================================================================
+Lists
+========================================================================== */
+ul {
+  list-style: none; }
+
+/*==========================================================================
+Grid System
+==========================================================================*/
+/*
+Width: 1000px
+# Columns : 12
+Column width: 65px
+Gutter : 20px
+*/
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10,
+.grid_11, .grid_12 {
+  width: 100%;
+  margin: 0 2% 1% 0;
+  float: left;
+  display: block; }
+
+.alpha {
+  margin-left: 0px; }
+
+.omega {
+  margin-right: 0px; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+html .clearfix, *:first-child + html .clearfix {
+  zoom: 1; }
+
+/*Main Wrapper*/
+.main-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/*MEDIA QUERIES FOR RESPONSIVE LAYOUT*/
+@media (min-width: 48em) {
+  .grid_1 {
+    width: 6.5%; }
+
+  .grid_2 {
+    width: 15%; }
+
+  .grid_3 {
+    width: 23.5%; }
+
+  .grid_4 {
+    width: 32%; }
+
+  .grid_5 {
+    width: 40.5%; }
+
+  .grid_6 {
+    width: 49%; }
+
+  .grid_7 {
+    width: 57.5%; }
+
+  .grid_8 {
+    width: 66%; }
+
+  .grid_9 {
+    width: 74.5%; }
+
+  .grid_10 {
+    width: 83%; }
+
+  .grid_11 {
+    width: 91.5%; }
+
+  .grid_12 {
+    width: 100%; }
+
+  .page-heading {
+    text-align: left; }
+
+  .m-navigation-list--item {
+    padding: 2em; } }
+.m-contact-form--name, .m-contact-form--email {
+  width: 100%; }
+
+.m-contact-form--btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.m-contact-form--comment {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.m-contact-form {
+  width: 100%; }
+
+.m-socialmedia {
+  width: 25%;
+  border-radius: 10%; }
+
+.m-name {
+  color: #B80000; }
+
+.m-footer {
+  font-size: 1em;
+  border: 3em;
+  padding: 0.5em 0 0 1em;
+  border-radius: 1em;
+  background-color: #B80000;
+  background-image: url(seattle.jpg);
+  background-blend-mode: multiply;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-end; }
+
+.m-footer-image {
+  padding: 1em;
+  width: 5em; }
+
+.m-footer-location {
+  font-family: 'Aller', sans-serif;
+  color: #FFF;
+  display: inline-block;
+  padding-left: 0;
+  text-align: left; }
+
+/* HEADER STYLES*/
+.page-heading {
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 1.5em;
+  text-transform: uppercase; }
+
+/* NAV STYLES*/
+.m-nav {
+  text-transform: uppercase;
+  /*padding-top: 1em;*/
+  line-height: 1.5em;
+  text-align: center; }
+
+.m-navigation-link {
+  display: flex; }
+
+.m-navigation-list--link {
+  text-decoration: none; }
+
+.m-navigation-list--item {
+  font-family: 'Aller', sans-serif;
+  flex: 1;
+  font-size: 1em; }
+
+/*# sourceMappingURL=app.css.map */
