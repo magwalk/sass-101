@@ -1,3 +1,5 @@
+/* Type Size Variables
+****************************/
 /* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -15,7 +17,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 1em;
   font-family: 'Aller', sans-serif;
   vertical-align: baseline; }
 
@@ -65,7 +67,7 @@ Typography
   font-style: normal; }
 h1 {
   font-family: 'artifika', serif;
-  font-size: 2em;
+  font-size: 2.618rem;
   margin: 0.67em 0; }
 
 /* ==========================================================================
@@ -89,10 +91,10 @@ Width: 1000px
 Column width: 65px
 Gutter : 20px
 */
-.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10,
-.grid_11, .grid_12 {
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7,
+.grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
   width: 100%;
-  margin: 0 2% 1% 0;
+  margin: 0 1% 1% 1%;
   float: left;
   display: block; }
 
@@ -126,8 +128,7 @@ html .clearfix, *:first-child + html .clearfix {
 /*Main Wrapper*/
 .main-wrapper {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center; }
 
 .m-contact-form--name, .m-contact-form--email {
@@ -135,14 +136,12 @@ html .clearfix, *:first-child + html .clearfix {
 
 .m-contact-form--btn {
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0 auto; }
 
 .m-contact-form--comment {
   display: block;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0 auto; }
 
 .m-contact-form {
   width: 100%; }
@@ -192,7 +191,7 @@ html .clearfix, *:first-child + html .clearfix {
 /* NAV STYLES*/
 .m-nav {
   text-transform: uppercase;
-  /*padding-top: 1em;*/
+  padding-top: 1em;
   line-height: 1.5em;
   text-align: center; }
 
@@ -208,7 +207,7 @@ html .clearfix, *:first-child + html .clearfix {
   font-size: 1em; }
 
 /*MEDIA QUERIES FOR RESPONSIVE LAYOUT*/
-@media (min-width: 48em) {
+@media (min-width: 800px) {
   .grid_1 {
     width: 6.5%; }
 

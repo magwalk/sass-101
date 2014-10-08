@@ -15,7 +15,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: em(12);
   font-family:'Aller', sans-serif;
   vertical-align: baseline;
 }
@@ -76,7 +76,7 @@ Typography
 
 h1 {
   font-family: 'artifika', serif;
-  font-size: 2em;
+  font-size: $large;
   margin: 0.67em 0;
 }
 
