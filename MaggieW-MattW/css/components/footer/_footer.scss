@@ -3,7 +3,7 @@
   border: 3em;
   padding: 0.5em 0 0 1em;
   border-radius: 1em;
-  background-color: #B80000;
+  background-color: $primary;
   background-image: url(seattle.jpg);
   background-blend-mode: multiply;
   background-size: 100%;
@@ -23,7 +23,7 @@
 
 .m-footer-location {
   font-family: 'Aller', sans-serif;
-  color:#FFF;
+  color: $lightOnDark;
   display: inline-block;
   padding-left: 0;
   text-align:left;
