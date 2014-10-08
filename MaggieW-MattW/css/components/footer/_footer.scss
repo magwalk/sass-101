@@ -1,13 +1,13 @@
 .m-footer {
-  font-size: 1em;
-  border: 3em;
-  padding: 0.5em 0 0 1em;
-  border-radius: 1em;
-  background-color: $primary;
-  background-image: url(seattle.jpg);
-  background-blend-mode: multiply;
-  background-size: 100%;
-  background-position: center;
+  font-size: $small;
+  padding: 0.5em 1em 1.5em 1em;
+  @include borderRadius($smaller);
+  // background-color: $primary;
+  // background-image: url(seattle.jpg);
+  // background-blend-mode: multiply;
+  // background-size: 100%;
+  // background-position: center;
+  @include multiplyRed('seattle.jpg');
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -17,8 +17,8 @@
 }
 
 .m-footer-image {
-  padding: 1em;
-  width: 5em;
+  padding-top: $smaller;
+  width: $huge;
 }
 
 .m-footer-location {
@@ -26,5 +26,6 @@
   color: $lightOnDark;
   display: inline-block;
   padding-left: 0;
+
   text-align:left;
 }

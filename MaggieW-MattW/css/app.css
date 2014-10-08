@@ -44,6 +44,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* ==========================================================================
 Typography
 ========================================================================== */
@@ -131,33 +135,59 @@ html .clearfix, *:first-child + html .clearfix {
   margin: 0 auto;
   text-align: center; }
 
-.m-contact-form--name, .m-contact-form--email {
-  width: 100%; }
+.m-contact-form--name, .m-contact-form--email, .m-contact-form--comment {
+  width: 100%;
+  color: #B80000;
+  padding: 0.618rem;
+  font-size: 1rem;
+  border: solid 2px #e6e6e6;
+  transition: border 0.3s; }
+  .m-contact-form--name:focus, .m-contact-form--email:focus, .m-contact-form--comment:focus {
+    outline: 0;
+    border: solid 2px #B80000; }
 
 .m-contact-form--btn {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Aller";
+  font-size: 1rem;
+  color: #FFF;
+  font-weight: normal;
+  -moz-border-radius: 0.618rem;
+  -webkit-border-radius: 0.618rem;
+  border-radius: 0.618rem;
+  border: 0px;
+  margin-top: 0.381rem;
+  background-color: #B80000;
+  transition: background-color 0.3s; }
+  .m-contact-form--btn:hover, .m-contact-form--btn:active {
+    background-color: #850000; }
 
 .m-contact-form--comment {
   display: block;
-  width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 200px; }
 
 .m-contact-form {
-  width: 100%; }
+  width: 100%;
+  margin-top: 0.618rem; }
 
 .m-socialmedia {
-  width: 25%;
-  border-radius: 10%; }
+  width: 2.618rem;
+  border-radius: 0.618rem; }
 
 .m-name {
   color: #B80000; }
 
+.m-socialmedia-heading {
+  font-size: 1.618rem; }
+
 .m-footer {
-  font-size: 1em;
-  border: 3em;
-  padding: 0.5em 0 0 1em;
-  border-radius: 1em;
+  font-size: 1rem;
+  padding: 0.5em 1em 1.5em 1em;
+  -moz-border-radius: 0.618rem;
+  -webkit-border-radius: 0.618rem;
+  border-radius: 0.618rem;
   background-color: #B80000;
   background-image: url(seattle.jpg);
   background-blend-mode: multiply;
@@ -171,8 +201,8 @@ html .clearfix, *:first-child + html .clearfix {
   align-items: flex-end; }
 
 .m-footer-image {
-  padding: 1em;
-  width: 5em; }
+  padding-top: 0.618rem;
+  width: 4.236rem; }
 
 .m-footer-location {
   font-family: 'Aller', sans-serif;
@@ -184,15 +214,15 @@ html .clearfix, *:first-child + html .clearfix {
 /* HEADER STYLES*/
 .page-heading {
   text-align: center;
-  font-size: 1.4em;
-  padding-top: 1.5em;
+  font-size: 1.618rem;
+  padding-top: 1.618rem;
   text-transform: uppercase; }
 
 /* NAV STYLES*/
 .m-nav {
   text-transform: uppercase;
-  padding-top: 1em;
-  line-height: 1.5em;
+  padding-top: 1rem;
+  line-height: 1.618rem;
   text-align: center; }
 
 .m-navigation-link {
@@ -204,7 +234,7 @@ html .clearfix, *:first-child + html .clearfix {
 .m-navigation-list--item {
   font-family: 'Aller', sans-serif;
   flex: 1;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 /*MEDIA QUERIES FOR RESPONSIVE LAYOUT*/
 @media (min-width: 800px) {

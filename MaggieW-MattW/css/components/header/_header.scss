@@ -1,16 +1,16 @@
 /* HEADER STYLES*/
 .page-heading {
   text-align: center;
-  font-size: 1.4em;
-  padding-top: 1.5em;
+  font-size: $normal;
+  padding-top: $normal;
   text-transform: uppercase;
 }
 
 /* NAV STYLES*/
 .m-nav {
   text-transform: uppercase;
-  padding-top: 1em;
-  line-height: 1.5em;
+  padding-top: $small;
+  line-height: $normal;
   text-align: center;
 }
 
@@ -25,5 +25,5 @@
 .m-navigation-list--item {
   font-family: 'Aller', sans-serif;
   flex:1;
-  font-size: 1em;
+  font-size: $small;
 }
