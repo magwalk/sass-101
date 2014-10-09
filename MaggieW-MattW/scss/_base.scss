@@ -90,7 +90,6 @@ Typography
 h1 {
   font-family: 'artifika', serif;
   font-size: $large;
-  margin: 0.67em 0;
 }
 
 
@@ -108,4 +107,5 @@ h1 {
 
 p {
   color: $accent1;
+  line-height: $large;
 }
