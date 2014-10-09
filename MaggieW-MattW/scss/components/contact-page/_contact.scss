@@ -1,42 +1,24 @@
+
 .m-contact-form--name, .m-contact-form--email, .m-contact-form--comment {
-  width: 100%;
-  color: $primary;
-  padding: $smaller;
-  font-size: $small;
-  border: solid 2px lighten(grey, 40%);
-  transition: border 0.3s;
-  &:focus {
-    outline: 0;
-    border: solid 2px $primary;
-  }
+  @extend .form-input;
 }
 
 
 .m-contact-form--btn {
-  display: block;
-  margin: 0 auto;
-  @include fontSet('Aller', $small, $lightOnDark);
-  font-weight: normal;
-  @include borderRadius($smaller);
-  border: 0px;
-  margin-top: $tiny;
-  background-color: $primary;
-  transition: background-color 0.3s;
-  &:hover, &:active {
-    background-color: darken($primary, 10%);
-  }
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  @extend .form-btn
 
 }
 
 .m-contact-form--comment {
-  display: block;
-  margin: 0 auto;
-  height: 200px;
+  @extend .form-textarea;
+
 }
 
 .m-contact-form {
   width: 100%;
-  margin-top: $smaller;
 }
 
 
