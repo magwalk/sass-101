@@ -2,23 +2,23 @@
 Grid System
 ==========================================================================*/
 
-/*
-Width: 1000px
-# Columns : 12
-Column width: 65px
-Gutter : 20px
-*/
 
+/* Mobile Grid Resets all Columns to 100%*/
+$cols : 12;
+$colWidth: 6.5%;
+$gutterWidth: 2%;
 
-/*Default View is for Mobile*/
-.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7,
-.grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block;
-  //Sass starts here!
-  //Create a function for breakpoint
+@for $i from 1 through $cols {
+  .grid_#{$i} {
+    width: 100%;
+    margin: 0 1% 1% 1%;
+    float: left;
+    display: block;
+    @include breakpoint {
+      $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+      width: $gridWidth;
+    }
+  }
 }
 
 .alpha {
@@ -52,11 +52,3 @@ Gutter : 20px
 html .clearfix, *:first-child+html .clearfix {
   zoom:1
 }
-
-/*Main Wrapper*/
-.main-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-

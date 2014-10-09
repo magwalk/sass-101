@@ -1,0 +1,35 @@
+// /*MEDIA QUERIES FOR RESPONSIVE LAYOUT*/
+
+// MOVED TO BASE MIXINS
+// $largeScreen : 'screen and (min-width:800px)';
+// @mixin breakpoint {
+//   @media #{$largeScreen} {
+//     @content;
+//   }
+// }
+
+//ALL MEDIA QUERIES PLACED IN THEIR RESPECTIVE CLASSES
+// @media (min-width: 800px) {
+//   //Defines # of columns
+
+
+//MOVED TO LAYOUT : GRID
+//   @for $i from 1 through $cols {
+//     .grid_#{$i} {
+//       // This is the function
+//       // grid_X = (6.5*X) + (2 * (X - 1))
+//       // where X is the column number, 6.5 is the width of a single column, and 2 is the width of the gutter.
+//       $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+//       width: $gridWidth;
+//     }
+//   }
+
+// MOVED TO HEADER
+//   .page-heading {
+//     text-align: left;
+//   }
+// MOVED TO HEADER
+//   .m-navigation-list--item {
+//     padding:2em;
+//   }
+// }
