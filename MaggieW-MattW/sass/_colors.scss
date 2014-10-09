@@ -1,0 +1,59 @@
+//Color
+$primary: #B80000;
+$base-color: #B80000;
+$secondary: blue;
+$accent1: #66CC00;
+$lightOnDark: #FFF;
+
+.swatch{
+  float: left;
+  position: relative;
+  width: 64px;
+  height: 64px; 
+  z-index: 11;
+  border-radius: 50%;
+}
+
+.swatch:nth-child(6n) {
+  clear: left;
+}
+
+.swatch-base:nth-child(1) {
+background-color: $base-color; 
+}
+
+.swatch-base:nth-child(2) {
+background-color: lighten($base-color, 20%); 
+}
+
+.swatch-base:nth-child(3) {
+background-color: lighten($base-color, 40% ); 
+}
+
+.swatch-base:nth-child(4) {
+background-color: lighten( $base-color, 60% ); 
+}
+
+.swatch-base:nth-child(5) {
+background-color: adjust-hue( $base-color, 50deg ); 
+}
+
+.swatch-base:nth-child(6) {
+background-color: saturate( $base-color, 20% ); 
+}
+
+.swatch-base:nth-child(7) {
+background-color: desaturate( $base-color, 60% ); 
+}
+
+.swatch-base:nth-child(8) {
+background-color: transparentize( $base-color, 0.8 ); 
+}
+
+.swatch-base:nth-child(9) {
+background-color: complement( $base-color ); 
+}
+
+.swatch-base:nth-child(10) {
+  background-color: invert( $base-color ); }
+

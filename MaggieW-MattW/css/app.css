@@ -1,5 +1,46 @@
 /* Type Size Variables
 ****************************/
+.swatch {
+  float: left;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  z-index: 11;
+  border-radius: 50%; }
+
+.swatch:nth-child(6n) {
+  clear: left; }
+
+.swatch-base:nth-child(1) {
+  background-color: #B80000; }
+
+.swatch-base:nth-child(2) {
+  background-color: #ff1f1f; }
+
+.swatch-base:nth-child(3) {
+  background-color: #ff8585; }
+
+.swatch-base:nth-child(4) {
+  background-color: #ffebeb; }
+
+.swatch-base:nth-child(5) {
+  background-color: #b89900; }
+
+.swatch-base:nth-child(6) {
+  background-color: #b80000; }
+
+.swatch-base:nth-child(7) {
+  background-color: #813737; }
+
+.swatch-base:nth-child(8) {
+  background-color: rgba(184, 0, 0, 0.2); }
+
+.swatch-base:nth-child(9) {
+  background-color: #00b8b8; }
+
+.swatch-base:nth-child(10) {
+  background-color: #47ffff; }
+
 /* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -74,7 +115,7 @@ h1 {
 Colors
 ========================================================================== */
 a:link {
-  color: #999900; }
+  color: blue; }
 
 h1 {
   color: #B80000; }
@@ -123,9 +164,9 @@ Gutter : 20px
   width: 0;
   height: 0; }
 
-html .clearfix, *:first-child + html .clearfix {
-  zoom: 1; }
-
+/* html .clearfix, *:first-child+html .clearfix {
+  zoom:1
+} */
 /*Main Wrapper*/
 .main-wrapper {
   width: 80%;
@@ -149,7 +190,7 @@ html .clearfix, *:first-child + html .clearfix {
 
 .m-socialmedia {
   width: 25%;
-  border-radius: 10%; }
+  border-radius: 50%; }
 
 .m-name {
   color: #B80000; }
@@ -160,7 +201,7 @@ html .clearfix, *:first-child + html .clearfix {
   padding: 0.5em 0 0 1em;
   border-radius: 1em;
   background-color: #B80000;
-  background-image: url(seattle.jpg);
+  background-image: url(../img/seattle.jpg);
   background-blend-mode: multiply;
   background-size: 100%;
   background-position: center;
