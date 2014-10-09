@@ -4,16 +4,13 @@ Grid System
 
 
 /* Mobile Grid Resets all Columns to 100%*/
-$cols : 12;
-$colWidth: 6.5%;
-$gutterWidth: 2%;
-
 @for $i from 1 through $cols {
   .grid_#{$i} {
     width: 100%;
     margin: 0 1% 1% 1%;
     float: left;
     display: block;
+    //Sets grid widths at larger screen sizes
     @include breakpoint {
       $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
       width: $gridWidth;
