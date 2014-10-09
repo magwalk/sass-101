@@ -4,6 +4,9 @@
   font-size: $normal;
   padding-top: $normal;
   text-transform: uppercase;
+  @include breakpoint {
+    text-align: left;
+  }
 }
 
 /* NAV STYLES*/
@@ -26,4 +29,7 @@
   font-family: 'Aller', sans-serif;
   flex:1;
   font-size: $small;
+  @include breakpoint {
+    padding:2em;
+  }
 }

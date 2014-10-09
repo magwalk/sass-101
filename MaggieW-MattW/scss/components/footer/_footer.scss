@@ -7,7 +7,7 @@
   // background-blend-mode: multiply;
   // background-size: 100%;
   // background-position: center;
-  @include multiplyRed('seattle.jpg');
+  @include multiplyRed('../img/seattle.jpg');
   display: flex;
   justify-content: space-between;
   flex-direction: row;

@@ -1,28 +1,35 @@
-/*MEDIA QUERIES FOR RESPONSIVE LAYOUT*/
-@media (min-width: 800px) {
-  //Defines # of columns
-  $cols : 12;
-  $colWidth: 6.5%;
-  $gutterWidth: 2%;
+// /*MEDIA QUERIES FOR RESPONSIVE LAYOUT*/
+
+// MOVED TO BASE MIXINS
+// $largeScreen : 'screen and (min-width:800px)';
+// @mixin breakpoint {
+//   @media #{$largeScreen} {
+//     @content;
+//   }
+// }
+
+//ALL MEDIA QUERIES PLACED IN THEIR RESPECTIVE CLASSES
+// @media (min-width: 800px) {
+//   //Defines # of columns
 
 
-  @for $i from 1 through $cols {
-    .grid_#{$i} {
-      // This is the function
-      // grid_X = (6.5*X) + (2 * (X - 1))
-      // where X is the column number, 6.5 is the width of a single column, and 2 is the width of the gutter.
-      $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
-      width: $gridWidth;
+//MOVED TO LAYOUT : GRID
+//   @for $i from 1 through $cols {
+//     .grid_#{$i} {
+//       // This is the function
+//       // grid_X = (6.5*X) + (2 * (X - 1))
+//       // where X is the column number, 6.5 is the width of a single column, and 2 is the width of the gutter.
+//       $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+//       width: $gridWidth;
+//     }
+//   }
 
-    }
-  }
-
-  .page-heading {
-    text-align: left;
-  }
-
-  .m-navigation-list--item {
-    padding:2em;
-  }
-
-}
+// MOVED TO HEADER
+//   .page-heading {
+//     text-align: left;
+//   }
+// MOVED TO HEADER
+//   .m-navigation-list--item {
+//     padding:2em;
+//   }
+// }

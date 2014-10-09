@@ -47,6 +47,15 @@ table {
   box-sizing: border-box;
  }
 
+/*Main Wrapper*/
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
 /* ==========================================================================
 Typography
 ========================================================================== */
@@ -57,14 +66,14 @@ Typography
 
 @font-face {
   font-family: 'Aller';
-  src: url('fonts/Aller/Aller_Rg.ttf') format('truetype');
+  src: url('../scss/fonts/Aller/Aller_Rg.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Aller';
-  src: url('fonts/Aller/Aller_Bd.ttf') format('truetype');
+  src: url('../scss/fonts/Aller/Aller_Bd.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -73,7 +82,7 @@ Typography
 
 @font-face {
   font-family: 'artifika';
-  src: url('fonts/artifika/Artifika-Regular.ttf') format('truetype');
+  src: url('../scss/fonts/artifika/Artifika-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
