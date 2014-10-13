@@ -1,35 +1,69 @@
 /* HEADER STYLES*/
 .page-heading {
-  text-align: center;
   font-size: $normal;
-  padding-top: $normal;
   text-transform: uppercase;
   @include breakpoint {
     text-align: left;
   }
 }
 
-/* NAV STYLES*/
+
+//Menu Classes
 .m-nav {
   text-transform: uppercase;
-  padding-top: $small;
-  line-height: $normal;
-  text-align: center;
 }
+nav ul {
+  display: inline;
+  color: $secondary;
+  li {
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover {
+      background: $primary;
+      color: $lightOnDark;
+      ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    a {
+      color: $lightOnDark;
+    }
+    ul {
+      padding: 0;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 150px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transiton: opacity 0.2s;
+      -moz-transition: opacity 0.2s;
+      -ms-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      -transition: opacity 0.2s;
+      li {
+        background: $primary;
+        display: block;
+        color: $accent1;
+        &:hover {
+          background: lighten($primary, 10%);
+        }
+      }
+    }
 
-.m-navigation-link {
-  display:flex;
-}
-
-.m-navigation-list--link {
-  text-decoration: none;
-}
-
-.m-navigation-list--item {
-  font-family: 'Aller', sans-serif;
-  flex:1;
-  font-size: $small;
-  @include breakpoint {
-    padding:2em;
   }
 }

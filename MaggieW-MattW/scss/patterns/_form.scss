@@ -21,7 +21,6 @@
   display: block;
   @include fontSet('Aller', $small, $lightOnDark);
   font-weight: normal;
-  text-shadow: 1.5px 1.5px 0px darken($primary, 10%);
   @include borderRadius($smaller);
   border: 0px;
   margin-top: $tiny;

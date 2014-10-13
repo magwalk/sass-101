@@ -39,8 +39,11 @@ h1 {
 Colors
 ========================================================================== */
 
-a:link {
+a {
   color: $secondary;
+  text-decoration: none;
+  target-name:new;
+  target-new:tab;
 }
 
 h1 {

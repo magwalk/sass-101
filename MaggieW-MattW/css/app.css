@@ -24,9 +24,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-body {
-  line-height: 1; }
-
 ol, ul {
   list-style: none; }
 
@@ -50,7 +47,8 @@ table {
 .main-wrapper {
   width: 80%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1.618rem; }
 
 /* ==========================================================================
 Typography
@@ -80,8 +78,11 @@ h1 {
 /* ==========================================================================
 Colors
 ========================================================================== */
-a:link {
-  color: #999900; }
+a {
+  color: #999900;
+  text-decoration: none;
+  target-name: new;
+  target-new: tab; }
 
 h1 {
   color: #B80000; }
@@ -253,7 +254,6 @@ html .clearfix, *:first-child + html .clearfix {
   font-size: 1rem;
   color: #FFF;
   font-weight: normal;
-  text-shadow: 1.5px 1.5px 0px #850000;
   -moz-border-radius: 0.618rem;
   -webkit-border-radius: 0.618rem;
   border-radius: 0.618rem;
@@ -315,33 +315,60 @@ html .clearfix, *:first-child + html .clearfix {
 
 /* HEADER STYLES*/
 .page-heading {
-  text-align: center;
   font-size: 1.618rem;
-  padding-top: 1.618rem;
   text-transform: uppercase; }
   @media screen and (min-width: 800px) {
     .page-heading {
       text-align: left; } }
 
-/* NAV STYLES*/
 .m-nav {
-  text-transform: uppercase;
-  padding-top: 1rem;
-  line-height: 1.618rem;
-  text-align: center; }
+  text-transform: uppercase; }
 
-.m-navigation-link {
-  display: flex; }
-
-.m-navigation-list--link {
-  text-decoration: none; }
-
-.m-navigation-list--item {
-  font-family: 'Aller', sans-serif;
-  flex: 1;
-  font-size: 1rem; }
-  @media screen and (min-width: 800px) {
-    .m-navigation-list--item {
-      padding: 2em; } }
+nav ul {
+  display: inline;
+  color: #999900; }
+  nav ul li {
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    nav ul li:hover {
+      background: #B80000;
+      color: #FFF; }
+      nav ul li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible; }
+    nav ul li a {
+      color: #FFF; }
+    nav ul li ul {
+      padding: 0;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 150px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transiton: opacity 0.2s;
+      -moz-transition: opacity 0.2s;
+      -ms-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      -transition: opacity 0.2s; }
+      nav ul li ul li {
+        background: #B80000;
+        display: block;
+        color: #66CC00; }
+        nav ul li ul li:hover {
+          background: #eb0000; }
 
 /*# sourceMappingURL=app.css.map */
