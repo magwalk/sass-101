@@ -8,14 +8,14 @@ Typography
 
 @font-face {
   font-family: 'Aller';
-  src: url('../scss/fonts/Aller/Aller_Rg.ttf') format('truetype');
+  src: url('~/scss/fonts/Aller/Aller_Rg.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Aller';
-  src: url('../scss/fonts/Aller/Aller_Bd.ttf') format('truetype');
+  src: url('~/scss/fonts/Aller/Aller_Bd.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -24,7 +24,7 @@ Typography
 
 @font-face {
   font-family: 'artifika';
-  src: url('../scss/fonts/artifika/Artifika-Regular.ttf') format('truetype');
+  src: url('~/scss/fonts/artifika/Artifika-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,17 +40,17 @@ Colors
 ========================================================================== */
 
 a {
-  color: $secondary;
+  color: $linkColor;
   text-decoration: none;
-  target-name:new;
-  target-new:tab;
+  target-name: new;
+  target-new: tab;
 }
 
 h1 {
-  color: $primary;
+  color: $headingColor;
 }
 
 p {
-  color: $accent1;
+  color: $pColor;
   line-height: $large;
 }

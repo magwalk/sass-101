@@ -18,10 +18,10 @@
   height: 200px;
 }
 .form-btn {
-  display: block;
   @include fontSet('Aller', $small, $lightOnDark);
-  font-weight: normal;
   @include borderRadius($smaller);
+  display: block;
+  font-weight: normal;
   border: 0px;
   margin-top: $tiny;
   min-width: 100px;

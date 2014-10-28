@@ -2,8 +2,11 @@
 @import "config";
 @import "reset";
 @import "typography";
-@import "mixins";
+@import "borderRadius-mixin";
+@import "breakpoint-mixin";
+@import "multiplyRed-mixin";
+@import "fontSet-mixin";
 @import "grid";
 @import "patterns/manifest";
 @import "components/manifest";
-@import "responsive";
+

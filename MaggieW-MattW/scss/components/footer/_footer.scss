@@ -1,13 +1,8 @@
 .m-footer {
+  @include borderRadius($smaller);
+  @include multiplyRed('../img/seattle.jpg');
   font-size: $small;
   padding: 0.5em 1em 1.5em 1em;
-  @include borderRadius($smaller);
-  // background-color: $primary;
-  // background-image: url(seattle.jpg);
-  // background-blend-mode: multiply;
-  // background-size: 100%;
-  // background-position: center;
-  @include multiplyRed('../img/seattle.jpg');
   display: flex;
   justify-content: space-between;
   flex-direction: row;

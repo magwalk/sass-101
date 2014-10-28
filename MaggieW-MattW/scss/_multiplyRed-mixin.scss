@@ -1,0 +1,7 @@
+@mixin multiplyRed($imageUrl) {
+  background-color: $primary;
+  background-image: url(#{$imageUrl});
+  background-blend-mode: multiply;
+  background-size: 100%;
+  background-position: center;
+}

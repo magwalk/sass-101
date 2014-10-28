@@ -5,10 +5,10 @@
 
 
 .m-contact-form--btn {
+  @extend .form-btn;
   margin-right: auto;
   margin-left: auto;
   width: 50%;
-  @extend .form-btn
 
 }
 
